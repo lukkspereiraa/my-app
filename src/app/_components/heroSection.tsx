@@ -4,7 +4,7 @@ import { FaFacebook, FaInstagram, FaWhatsapp } from "react-icons/fa";
 
 export function HeroSection() {
     return (
-        <section className="flex flex-col justify-center text-white h-screen px-6 md:px-20 bg-black gap-10 relative text-center">
+        <section id="hero" className="flex flex-col justify-center text-white h-screen px-6 md:px-20 bg-black gap-10 relative text-center">
             {/* Logo e Descrição */}
             <div className="flex flex-col md:flex-row items-center justify-center gap-10 w-full max-w-5xl mx-auto">
                 <Image src={logo} alt="Logo da empresa" width={250} height={250} className="drop-shadow-lg" />
