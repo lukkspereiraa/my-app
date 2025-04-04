@@ -19,13 +19,13 @@ export function HeroSection() {
             
             {/* Contatos */}
             <div className="flex gap-6 text-gray-400 mt-10 justify-center">
-                <a href="https://wa.me/seu-numero" target="_blank" className="hover:text-green-500 transition-colors">
+                <a href="https://api.whatsapp.com/send?phone=558899998167&text=Gostaria%20de%20saber%20mais%20sobre%20a%20Lima%20Fight" target="_blank" className="hover:text-green-500 transition-colors">
                     <FaWhatsapp size={32} />
                 </a>
-                <a href="https://instagram.com/seu-instagram" target="_blank" className="hover:text-pink-500 transition-colors">
+                <a href="https://instagram.com/Lima_fight" target="_blank" className="hover:text-pink-500 transition-colors">
                     <FaInstagram size={32} />
                 </a>
-                <a href="https://facebook.com/seu-facebook" target="_blank" className="hover:text-blue-500 transition-colors">
+                <a href="https://instagram.com/Lima_fight" target="_blank" className="hover:text-blue-500 transition-colors">
                     <FaFacebook size={32} />
                 </a>
             </div>

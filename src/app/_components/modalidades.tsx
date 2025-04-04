@@ -1,12 +1,16 @@
-import { useState } from "react";
 import Image from "next/image";
+import box from "../../../public/boxe.png"
+import muayThai from "../../../public/muayThai.png"
+import jiujitsu from "../../../public/jiujutsu.png"
+import kids from "../../../public/kids.png"
+import karate from "../../../public/karate.png"
 
 const modalities = [
-    { name: "Muay Thai", price: "R$ 150", description: "Treinamento de golpes com técnicas tailandesas.", image: "/images/muaythai.jpg" },
-    { name: "Jiu-Jitsu", price: "R$ 180", description: "Arte suave focada em alavancas e finalizações.", image: "/images/jiujitsu.jpg" },
-    { name: "Boxe", price: "R$ 140", description: "Técnicas de socos e movimentação intensa.", image: "/images/boxe.jpg" },
-    { name: "MMA", price: "R$ 200", description: "Combinação de várias artes marciais para competição.", image: "/images/mma.jpg" },
-    { name: "Funcional", price: "R$ 120", description: "Treino focado em condicionamento físico e resistência.", image: "/images/funcional.jpg" }
+    { name: "Muay Thai", price: "R$ 60,00", description: "Treinamento de golpes com técnicas tailandesas.", image: muayThai },
+    { name: "Jiu-Jitsu", price: "R$ 60,00", description: "Arte suave focada em alavancas e finalizações.", image: jiujitsu },
+    { name: "Jiu-Jitsu Kids", price: "R$ 60,00", description: "O ensino de jiu jitsu para crianças.", image: kids },
+    { name: "Boxe", price: "R$ 60,00", description: "Técnicas de socos e movimentação intensa.", image: box },
+    { name: "Karatê", price: "R$ 60,00", description: "É uma arte que faz o uso de todas as partes do corpo para auto-defesa.", image: karate },
 ];
 
 export function ModalitiesCard() {
@@ -17,7 +21,7 @@ export function ModalitiesCard() {
                 {modalities.map((modality, index) => (
                     <div key={index} className="bg-gray-800 p-6 rounded-lg shadow-xl transform hover:scale-105 transition duration-300">
                         <div className="mb-4">
-                            <Image src={modality.image} alt={modality.name} width={300} height={200} className="rounded-md object-cover w-full h-40" />
+                            <Image src={modality.image} alt={modality.name} width={300} height={200} className="rounded-md object-cover w-full h-full" />
                         </div>
                         <h3 className="text-2xl font-semibold mb-2">{modality.name}</h3>
                         <p className="text-lg text-gray-300">{modality.description}</p>
